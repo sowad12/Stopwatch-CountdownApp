@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StopWatchAcitivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+  <TextView
+      android:id="@+id/swValuebtn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:text="0:00:00"
+      android:textSize="36sp"
+      tools:ignore="HardcodedText" />
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Start"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:onClick="onStart"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="stop"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:onClick="onStop"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Reset"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_gravity="right"
+        android:onClick="onReset"
+        />
+
+  </LinearLayout>
+
+
+</LinearLayout>
